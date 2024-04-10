@@ -1,5 +1,7 @@
 package com.base;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -43,6 +45,17 @@ public class DriverPage {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		
 
 	}
+	public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+            log.info("WebDriver quit.");
+        }
+    }
 }
