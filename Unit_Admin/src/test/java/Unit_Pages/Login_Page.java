@@ -90,13 +90,14 @@ public class Login_Page extends DriverPage {
 
 		
 	}
-//	@Test
-	public void Text_On_page()
+	@Test
+	public void ERROR_MSG()
 	{
-		List<WebElement> text = driver.findElements(By.xpath("//*[@class=\"auth-right-child-container p-10 flex flex-col h-full\"]"));
-		for (WebElement element : text) {
-		    System.out.println(element.getText());
-		}
+		WebElement Email_Error = driver.findElement(By.xpath("//*[text()=\"Email is required\"]"));
+		System.out.println(Email_Error.getText());
+		
+		WebElement Password_Error = driver.findElement(By.xpath("//*[text()=\"Password is required\"]"));
+		System.out.println(Password_Error.getText());
 	}
 
 }
