@@ -1,14 +1,20 @@
 package com.listners;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
 import com.base.BaseClass;
-import com.utility.DriverUtils;
+import com.base.DriverPage;
 
-public class MyListners extends BaseClass implements ITestListener  {
+public class MyListners extends DriverPage implements ITestListener  {
 
 	public void onTestStart(ITestResult result) {
 		test= report.createTest(result.getName());
@@ -21,10 +27,20 @@ public class MyListners extends BaseClass implements ITestListener  {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		test.log(Status.FAIL, "Testcase fail with name:"+result.getName());		
-	String path=DriverUtils.captureScreenshot(result.getName());
-	test.addScreenCaptureFromPath(path);	
-		
+	
+
+		TakesScreenshot screen = (TakesScreenshot) driver;
+		File src = screen.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(src,new File("C:\\Users\\radhe\\git\\Admin_Unit_Moduels\\Unit_Admin\\ScreenShorts\\google.png"));
+					
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		System.out.println("Test Fail and ScreenSort Taken.......");
+
 	}
 
 	public void onTestSkipped(ITestResult result) {

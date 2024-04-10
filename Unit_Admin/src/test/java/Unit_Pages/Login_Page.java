@@ -11,29 +11,18 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.base.DriverPage;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Login_Page {
+public class Login_Page extends DriverPage {
 
-	WebDriver driver;
-
-	//@BeforeTest
-	public void Browser() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("https://staging-admin.avighnasteel.in/");
-
-		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	}
 	
 	@Test(dataProvider = "TestData")
-	public void Login(String username,String password)
+	public void Login(String username,String password) throws Exception
 	{
-		
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		browsers();
+
 		driver.get("https://staging-admin.avighnasteel.in/");
 
 		driver.manage().window().maximize();
