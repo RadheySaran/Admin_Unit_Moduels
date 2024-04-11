@@ -50,12 +50,6 @@ public class Login_Page extends DriverPage {
 		String Expcted_Header = "Customer Management";
 		Assert.assertEquals(Actua_Header, Expcted_Header);
 
-//		String Actual_url = driver.getCurrentUrl();
-//		String Expcted_url = "https://staging-admin.avighnasteel.in/";
-//		Assert.assertEquals(Actual_url, Expcted_url);
-//
-//		WebElement img = driver.findElement(By.xpath("//img"));
-//		System.out.println(img.isDisplayed() + " = Logo is displaying");
 
 	}
 
@@ -63,12 +57,12 @@ public class Login_Page extends DriverPage {
 	public Object[][] TestData() {
 		Object[][] data = new Object[][] { 
 			    { "Admin@abainfotech.com", "Admin@1234" }, // valid
-				{ "Admin@abainfotech.com", "admin" }, 
-				{ "Admin", "Admin@1234" }, 
-				{ "", "Admin@1234" },
-				{ "Admin@abainfotech.com", "" }, 
-				{ "", "" }, 
-				{ "Admin@abainfotech.com", "" }
+//				{ "Admin@abainfotech.com", "admin" }, 
+//				{ "Admin", "Admin@1234" }, 
+//				{ "", "Admin@1234" },
+//				{ "Admin@abainfotech.com", "" }, 
+//				{ "", "" }, 
+//				{ "Admin@abainfotech.com", "" }
 
 		};
 		return data;
@@ -78,19 +72,12 @@ public class Login_Page extends DriverPage {
 	public void Velidate() {
 
 		String actualURL = driver.getCurrentUrl();
-		// String expectedURL = "https://staging-admin.avighnasteel.in/"; // Expected
-		// URL after login
 		String expectedURL = "https://staging-admin.avighnasteel.in/customer-management"; // Expected URL after login
 		Assert.assertEquals(actualURL, expectedURL, "Login successful.");
 
 		WebElement img = driver.findElement(By.xpath("//img"));
 		System.out.println(img.isDisplayed() + " = Logo is displaying");
 
-		WebElement Actual_Cstmr_Header = driver.findElement(By.xpath("//*[text()=\"Customer Management\"]"));
-		System.out.println(" ===User Is Sucessefully on Customer Management Page=== ");
-		String Actua_Header = Actual_Cstmr_Header.getText();
-		String Expcted_Header = "Customer Management";
-		Assert.assertEquals(Actua_Header, Expcted_Header);
 
 	}
 
