@@ -22,10 +22,16 @@ public class DriverPage {
 	public static ExtentReports report = null;
 	public static ExtentSparkReporter spakr = null;
 	Logger log = Logger.getLogger(DriverPage.class);
+	
+	private static boolean isBrowserPropertyLogged = false; // Flag to track if browser property has been logged
 
 	public void browsers() throws Exception {
-		System.out.println("Reading property file for browser");
-		log.info("Reading property file for browser");
+		
+		 if (!isBrowserPropertyLogged) { // Check if browser property has been logged
+	            System.out.println("Reading property file for browser");
+	            log.info("Reading property file for browser");
+	            isBrowserPropertyLogged = true; // Update flag to indicate browser property has been logged
+	        }
 		String browserName = PropertyUtils.readProperty("browser");
 
 		// IF THERE IS CHROME
