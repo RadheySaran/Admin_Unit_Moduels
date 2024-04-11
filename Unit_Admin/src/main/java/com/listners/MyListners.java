@@ -11,8 +11,9 @@ import com.utility.DriverUtils;
 public class MyListners extends DriverPage implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
-		test = report.createTest(result.getName());
 		System.out.println("Test Start Running.......");
+		test = report.createTest(result.getName()+"login page testing...");
+		
 
 	}
 
@@ -39,6 +40,7 @@ public class MyListners extends DriverPage implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
+		System.out.println("execution started....");
 
 	}
 

@@ -58,6 +58,14 @@ public class DriverPage {
 		
 
 	}
+	
+	// Generate Reports
+		public void reportInit() {
+			report = new ExtentReports();
+			spakr = new ExtentSparkReporter(System.getProperty("user.dir") + "/target/ExtentReports.html");
+			report.attachReporter(spakr);
+		}
+		
 	public void tearDown() {
         if (driver != null) {
             driver.quit();

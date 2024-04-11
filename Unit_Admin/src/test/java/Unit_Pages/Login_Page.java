@@ -57,12 +57,12 @@ public class Login_Page extends DriverPage {
 	public Object[][] TestData() {
 		Object[][] data = new Object[][] { 
 			    { "Admin@abainfotech.com", "Admin@1234" }, // valid
-//				{ "Admin@abainfotech.com", "admin" }, 
-//				{ "Admin", "Admin@1234" }, 
-//				{ "", "Admin@1234" },
-//				{ "Admin@abainfotech.com", "" }, 
-//				{ "", "" }, 
-//				{ "Admin@abainfotech.com", "" }
+				{ "Admin@abainfotech.com", "admin" }, 
+				{ "Admin", "Admin@1234" }, 
+				{ "", "Admin@1234" },
+				{ "Admin@abainfotech.com", "" }, 
+				{ "", "" }, 
+				{ "Admin@abainfotech.com", "" }
 
 		};
 		return data;
