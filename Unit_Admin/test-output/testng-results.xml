@@ -2,21 +2,21 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-13T11:45:38 IST" name="Default suite" finished-at="2024-04-13T11:46:03 IST" duration-ms="24273">
+  <suite started-at="2024-04-13T13:57:07 IST" name="Default suite" finished-at="2024-04-13T13:57:50 IST" duration-ms="43306">
     <groups>
     </groups>
-    <test started-at="2024-04-13T11:45:38 IST" name="Default test" finished-at="2024-04-13T11:46:03 IST" duration-ms="24273">
+    <test started-at="2024-04-13T13:57:07 IST" name="Default test" finished-at="2024-04-13T13:57:50 IST" duration-ms="43306">
       <class name="Unit_Pages.Login_Page">
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:Unit_Pages.Login_Page@3a6bb9bf]" started-at="2024-04-13T11:45:39 IST" name="Login" data-provider="TestData" finished-at="2024-04-13T11:46:03 IST" duration-ms="24121" status="FAIL">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:Unit_Pages.Login_Page@3a6bb9bf]" started-at="2024-04-13T13:57:07 IST" name="Login" data-provider="TestData" finished-at="2024-04-13T13:57:50 IST" duration-ms="43231" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[]]>
+                <![CDATA[Admin@1234]]>
               </value>
             </param>
           </params>
@@ -28,9 +28,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bca0613cf99a0539c4792070f5cb8891, findElement {using=xpath, value=//*[text()="Customer Management"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\radhe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55733/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bca0613cf99a0539c4792070f5cb8891]]>
+Command: [32cb4c98d2d3d82cd2bb39d600d4a3c5, findElement {using=xpath, value=//*[text()="Customer Management"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\radhe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65191/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 32cb4c98d2d3d82cd2bb39d600d4a3c5]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()="Customer Management"]"}
@@ -39,9 +39,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bca0613cf99a0539c4792070f5cb8891, findElement {using=xpath, value=//*[text()="Customer Management"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\radhe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55733/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bca0613cf99a0539c4792070f5cb8891
+Command: [32cb4c98d2d3d82cd2bb39d600d4a3c5, findElement {using=xpath, value=//*[text()="Customer Management"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\radhe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65191/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 32cb4c98d2d3d82cd2bb39d600d4a3c5
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -58,7 +58,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at Unit_Pages.Login_Page.Login(Login_Page.java:84)
+at Unit_Pages.Login_Page.Login(Login_Page.java:93)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,7 +93,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Velidate()[pri:0, instance:Unit_Pages.Login_Page@3a6bb9bf]" started-at="2024-04-13T11:46:03 IST" name="Velidate" finished-at="2024-04-13T11:46:03 IST" duration-ms="60" status="FAIL">
+        <test-method signature="Velidate()[pri:0, instance:Unit_Pages.Login_Page@3a6bb9bf]" started-at="2024-04-13T13:57:50 IST" name="Velidate" finished-at="2024-04-13T13:57:50 IST" duration-ms="16" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Login successful. expected [https://staging-admin.avighnasteel.in/customer-management] but found [https://staging-admin.avighnasteel.in/]]]>
@@ -105,7 +105,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
-at Unit_Pages.Login_Page.Velidate(Login_Page.java:101)
+at Unit_Pages.Login_Page.Velidate(Login_Page.java:110)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
