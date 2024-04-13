@@ -38,6 +38,8 @@ public class Login_Page extends DriverPage {
 			System.out.println(text.getText());
 			isTextPrinted = true; // Update flag to indicate text has been printed
 		}
+		
+		System.out.println(driver.getCurrentUrl()+" url of Admin Portal");
 
 		WebElement img = driver.findElement(By.xpath("//img"));
 		System.err.println(img.isDisplayed() + " = Logo is displaying on SignIn Page");
