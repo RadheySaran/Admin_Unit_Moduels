@@ -129,6 +129,11 @@ public class BaseClass {
 		driver.navigate().back();;
 	}
 	
+	// Navigate to other URL
+	public void navigateRefresh(String URL) {
+		driver.navigate().refresh();;
+	}
+	
 	
 
 	public void clickElementWithWait(WebElement element) {

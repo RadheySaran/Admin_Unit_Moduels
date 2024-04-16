@@ -3,6 +3,7 @@ package Unit_Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -15,10 +16,17 @@ public class Login_Page extends DriverPage {
 	WebElement Password_Error = null;
 	WebElement Invalid_Email = null;
 	private static boolean isTextPrinted = false;
+	
+//	@BeforeTest
+	public void Standards() throws Exception 
+	{
+		browsers();
+		driver.get(PropertyUtils.readProperty("urlAdmin"));
+
+	}
 
 	@Test(dataProvider = "TestData")
 	public void Login(String username, String password) throws Exception {
-
 		browsers();
 		driver.get(PropertyUtils.readProperty("urlAdmin"));
 
@@ -56,13 +64,14 @@ public class Login_Page extends DriverPage {
 
 		try {
 			Invalid_Email = driver.findElement(By.xpath("//*[text()='Invalid email address']"));// entered but not valid
-			System.err.println("Entered Email Is Not Valid");
+			System.err.println(driver.findElement(By.xpath("//*[text()='Invalid email address']")).getText());
 		} catch (Exception e) {
 			System.err.println("Entered Email is Valid");
 		}
 
 		try {
 			Password_Error = driver.findElement(By.xpath("//*[text()=\"Password is required\"]"));// when password is not entered
+		    
 		} catch (Exception e) {
 			System.out.println("Password Entered.");
 		}
