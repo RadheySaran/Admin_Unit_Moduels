@@ -54,12 +54,7 @@ public class Standard extends DriverPage {
 			System.out.println(tableData.getText());
 		}
 
-//		List<WebElement> Data = driver.findElements(By.tagName("tr"));
-//		int rowCount = 0;
-//		for (WebElement listdata : Data) {
-//			System.out.println(listdata.getText() + "\t");
-//			rowCount++;
-//		}
+
 		//print all the data in the list
 		printAllData();
 		
@@ -75,7 +70,7 @@ public class Standard extends DriverPage {
 		//ONLY ACTIVE STATUS
 		WebElement ACTIVE =driver.findElement(By.xpath("//*[text()=\"ACTIVE\"]"));
 		ACTIVE.click();
-		System.out.println("ONLY AVTIVE STANDARDS");
+		System.out.println("ONLY ACTIVE STANDARDS");
 		waitForFiveSeconds();
 		printAllData();
 		waitForFiveSeconds();
@@ -90,6 +85,15 @@ public class Standard extends DriverPage {
 		waitForFiveSeconds();
 		printAllData();
 		navigateRefresh();
+		waitForFiveSeconds();
+		
+		//Sort Filter
+		WebElement DateDesc =driver.findElement(By.xpath("//*[@id=\"select-Sort\"]"));
+		DateDesc.click();
+		System.out.println("ONLY Descending Date");
+		waitForFiveSeconds();
+		printAllData();
+		waitForFiveSeconds();
 		
 	}
 
