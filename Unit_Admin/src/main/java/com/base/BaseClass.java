@@ -55,7 +55,7 @@ public class BaseClass {
 	@SuppressWarnings("deprecation")
 	public void initialization() throws Exception {
 
-		System.out.println("Reading property file for browser");
+		//System.out.println("Reading property file for browser");
 		log.info("Reading property file for browser");
 
 		String browserName = PropertyUtils.readProperty("browser");
