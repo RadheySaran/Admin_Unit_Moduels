@@ -17,7 +17,7 @@ public class DriverUtils extends DriverPage {
 		File file = ts.getScreenshotAs(OutputType.FILE);
 
 		String path = System.getProperty("user.dir")+"\\Admin_Unit_Moduels\\Unit_Admin\\ScreenShorts\\"+name+".png";
-
+ 
 		try {
 			FileUtils.copyFile(file, new File(path));
 		} catch (IOException e) {
