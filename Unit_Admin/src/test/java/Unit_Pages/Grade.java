@@ -35,7 +35,19 @@ public class Grade extends DriverPage {
 	    waitForFiveSeconds();
 	    System.out.println(driver.getCurrentUrl());
 	    waitForFiveSeconds();
-	    
+	    driver.findElement(By.xpath("//*[text()=\"Grade\"]")).click();
+		System.out.println("Grade");
+		waitForFiveSeconds();
+		System.out.println(driver.getCurrentUrl());
+
+		driver.findElement(By.xpath("//*[text()=\"Add New \"]")).click();
+		waitForFiveSeconds();
+		System.out.println("Add New Grade");
+		waitForFiveSeconds();
+		System.out.println(driver.getCurrentUrl());
+		waitForFiveSeconds();
+
+
 	}
 		
 }
