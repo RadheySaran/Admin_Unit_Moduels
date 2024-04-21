@@ -19,11 +19,11 @@ public class Standard extends DriverPage {
 
 	@Test
 	public void Standards() throws Exception {
-		setScreen75();
-		waitForFiveSeconds();
-		setScreen75();
-		waitForFiveSeconds();
-		setScreen75();
+//		setScreen75();
+//		waitForFiveSeconds();
+//		setScreen75();
+//		waitForFiveSeconds();
+//		setScreen75();
 		waitForFiveSeconds();
 		driver.findElement(By.xpath("//*[text()=\"Masters\"]")).click();
 		System.out.println("==Masters==");
