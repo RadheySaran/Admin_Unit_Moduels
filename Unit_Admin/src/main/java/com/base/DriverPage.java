@@ -106,13 +106,22 @@ public class DriverPage {
 			
 		}
 		
-		//STE SCREEN RESULULATION TO 75%
+		//SET SCREEN RESULULATION TO 75%
 		public void setScreen75() throws Exception{
 			re = new Robot();
-			re.keyPress(KeyEvent.VK_CONTROL);
-			re.keyPress(KeyEvent.VK_SUBTRACT);
-			re.keyRelease(KeyEvent.VK_SUBTRACT);
-			re.keyRelease(KeyEvent.VK_CONTROL);
+			for (int i = 0; i < 4; i++) {
+				re.keyPress(KeyEvent.VK_CONTROL);
+				System.out.println("canrol");
+				re.keyPress(KeyEvent.VK_SUBTRACT);
+				System.out.println("subtract");
+				
+			}
+			
+		}
+		
+		//Pagination to 25
+		public void Pagination25() {
+			
 		}
 		
 		public void printAllData() {

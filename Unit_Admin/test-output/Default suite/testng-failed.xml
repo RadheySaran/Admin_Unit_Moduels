@@ -7,6 +7,7 @@
         <methods>
           <include name="Standards"/>
           <include name="Browser_Login"/>
+          <include name="Validate"/>
         </methods>
       </class> <!-- Unit_Pages.Standard -->
     </classes>
