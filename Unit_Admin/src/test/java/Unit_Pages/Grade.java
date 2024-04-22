@@ -57,11 +57,11 @@ public class Grade extends DriverPage {
 		waitForFiveSeconds();
 		Pagination25();
 
-		List<WebElement> Header = driver.findElements(By.xpath("//*[@class=\"h-12 text-center\"]"));
-
-		for (WebElement tableData : Header) {
-			System.out.println(tableData.getText());
-		}
+//		List<WebElement> Header = driver.findElements(By.xpath("//*[@class=\"h-12 text-center\"]"));
+//
+//		for (WebElement tableData : Header) {
+//			System.out.println(tableData.getText());
+//		}
 
 
 		//print all the data in the list
