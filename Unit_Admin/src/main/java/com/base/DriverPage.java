@@ -125,6 +125,14 @@ public class DriverPage {
 			System.err.println("Total number of rows: " + rowCount);
 		}
 
+		// Set Pagination to 25
+
+	 public void Pagination25(){
+		 WebElement pagination = driver.findElement(By.xpath("//*[@name='pageSize']"));
+		 Select dropdown = new Select(pagination);
+		 dropdown.selectByVisibleText("25");
+	 }
+
 			
 		
 		/* To Mouse Hover */
