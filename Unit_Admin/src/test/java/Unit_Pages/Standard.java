@@ -59,6 +59,7 @@ public class Standard extends DriverPage {
 		printAllData();
 		
 
+		
 		// STATUS FILTERS
 		WebElement filters = driver.findElement(By.xpath("//*[text()=\"All\"]"));
 		filters.click();
