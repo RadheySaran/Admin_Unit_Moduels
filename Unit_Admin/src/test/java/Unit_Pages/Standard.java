@@ -23,9 +23,7 @@ public class Standard extends DriverPage {
 
 		waitForFiveSeconds();
 		setScreen75();
-//		setScreen75();
-//		setScreen75();
-//		setScreen75();
+
 		waitForFiveSeconds();
 		driver.findElement(By.xpath("//*[text()=\"Masters\"]")).click();
 		System.out.println("==Masters==");
@@ -93,14 +91,23 @@ public class Standard extends DriverPage {
 		waitForFiveSeconds();
 
 	}
+	
+	@Test
+	public void Data() {
+		driver.findElement(By.xpath("//*[text()='Add New Standards']")).click();
+		driver.findElement(By.xpath("//*[text()='Add New Standards']")).sendKeys("is1234");
+	}
 
 	@Test
 	public void Validate() {
 		//Validate Header Text - Standard
 		WebElement header = driver.findElement(By.xpath("//*[text()=\"Standard\"]"));
-		Assert.assertEquals(header, "Standard");
-		
+		String actual = header.getText();
+		Assert.assertEquals(actual, "Standard");
 		//Validate Standard/Grade Text
+		
+		//Validate Current URL
+		
 		
 		
 
