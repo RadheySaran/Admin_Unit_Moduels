@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa5e69e2-9796-47c6-bd61-591f035c7839" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/src/main/java/com/base/DriverPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/src/main/java/com/base/DriverPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/src/test/java/Unit_Pages/Login_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/src/test/java/Unit_Pages/Login_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/src/test/java/Unit_Pages/Standard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/src/test/java/Unit_Pages/Standard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/src/test/resources/projectlog/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/src/test/resources/projectlog/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/target/classes/META-INF/maven/Unit_Admin/Unit_Admin/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/target/classes/META-INF/maven/Unit_Admin/Unit_Admin/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/target/classes/com/base/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/target/classes/com/base/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/target/classes/com/base/DriverPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/target/classes/com/base/DriverPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/target/classes/com/utility/DriverUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/target/classes/com/utility/DriverUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/target/test-classes/Unit_Pages/Login_Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/target/test-classes/Unit_Pages/Login_Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/target/test-classes/Unit_Pages/Standard.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/target/test-classes/Unit_Pages/Standard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/target/test-classes/projectlog/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/target/test-classes/projectlog/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/Default suite/Default test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/Default suite/Default test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/Default suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/Default suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/junitreports/TEST-Unit_Pages.Login_Page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/junitreports/TEST-Unit_Pages.Login_Page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/junitreports/TEST-Unit_Pages.Standard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/junitreports/TEST-Unit_Pages.Standard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/old/Default suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/old/Default suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/old/Default suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/old/Default suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/old/Default suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit_Admin/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit_Admin/test-output/testng-results.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RadheySaran"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RadheySaran/Admin_Unit_Moduels.git",
+    "accountId": "d316d821-54a1-4180-b818-c2105a2f7e5a"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2glWiztOTOxyoiIygS3uj9P3uWg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Branch/Standard",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa5e69e2-9796-47c6-bd61-591f035c7839" name="Changes" comment="" />
+      <created>1716272777152</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716272777152</updated>
+    </task>
+    <servers />
+  </component>
+</project>
