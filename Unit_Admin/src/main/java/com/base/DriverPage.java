@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -105,7 +106,14 @@ public class DriverPage {
 	public void setScreen75() throws Exception {
 		re = new Robot();
 		re.keyPress(KeyEvent.VK_CONTROL);
+
 		re.keyPress(KeyEvent.VK_SUBTRACT);
+		re.keyRelease(KeyEvent.VK_SUBTRACT);
+
+		re.keyPress(KeyEvent.VK_SUBTRACT);
+		re.keyRelease(KeyEvent.VK_SUBTRACT);
+
+		re.keyRelease(KeyEvent.VK_CONTROL);
 
 	}
 
@@ -138,10 +146,23 @@ public class DriverPage {
 		log.info(element);
 	}
 
+	// Wait VisiblityAndClick
+	public void visiblityAndClick(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated((By) element));
+
+		// Scroll the element into view
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
+		// Use JavaScript to click the element
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+
+	}
+
 	// Navigate to other URL
 	public void navigateRefresh() {
 		driver.navigate().refresh();
-		;
+
 	}
 
 	// To move the page down

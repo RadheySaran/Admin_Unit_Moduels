@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Unit_Pages.Standard">
+      <class name="Unit_Pages.UPC">
         <methods>
-          <include name="Standards"/>
           <include name="Browser_Login"/>
-          <include name="Validate"/>
+          <include name="Create_UPC"/>
         </methods>
-      </class> <!-- Unit_Pages.Standard -->
+      </class> <!-- Unit_Pages.UPC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
