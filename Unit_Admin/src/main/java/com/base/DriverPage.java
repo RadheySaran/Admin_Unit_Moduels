@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -82,6 +83,11 @@ public class DriverPage {
 		
 		
 
+	}
+	
+	public void zoomOut50(){
+		JavascriptExecutor jsc = (JavascriptExecutor)driver;
+		jsc.executeScript("document.body.style.zoom='50%'");
 	}
 	
 	public void clickElementWithWait(WebElement element) {
